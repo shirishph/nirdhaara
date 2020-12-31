@@ -56,11 +56,11 @@ class Env:
         for i in range(self.height):
             for j in range(self.width):
                 if self.original_pos_y == i and self.original_pos_x == j:
-                    print("S", end='')
+                    print(" S", end='')
                 elif self.posY == i and self.posX == j:
-                    print("O", end='')
+                    print(" O", end='')
                 elif self.endY == i and self.endX == j:
-                    print("T", end='')
+                    print(" T", end='')
                 else:
-                    print(".", end='')
-            print("")
+                    print("  ", end='')
+            print("\n")
